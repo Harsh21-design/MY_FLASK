@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block body %} 
+
+<div class="container my-3">
+    <h2>Login to MyTodo App</h2>
+    <form method="POST">
+        Username: <input type="text" name="username" placeholder="Enter your username">
+        Password: <input type="password" name="password" placeholder="Enter your password">
+        <br><br>
+        <input type="Submit" name="Submit" value="Login">
+        <br><br>
+        <p><i>Note</i>: Enter correct <b>Username & Password</b> to Login!</p>
+    </form>
+</div>
+
+
+
+{% endblock body %}
