@@ -1,0 +1,11 @@
+{% comment %} <p>
+       <section>
+         <nav>
+           <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/login">Login in your Account</a></li>
+             <li><a href="/register">Register a new Account</a></li>
+           </ul>
+         </nav>
+       </section>
+    </p> {% endcomment %}
