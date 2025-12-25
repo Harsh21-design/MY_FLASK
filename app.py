@@ -44,8 +44,15 @@ def mytodologin():
 @app.route("/register",methods=["GET","POST"])
 def mytodoregister():
     if request.method=="POST":
-        return ""
-    return "Coming Soon!"
+        username = request.form.get('username')
+        email = request.form['email']
+        password = request.form['password']
+        if username == username and email == email and password == password:
+            return render_template("login.html")
+        else:
+            return jsonify({"Message":"Error! Please Enter Correct All Credential to Register MyTodo App!!"})
+        
+    return render_template("register.html")
 
 
 # Add a todo and view all todos
